@@ -1,0 +1,53 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+#topBar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#userName {
+    margin-right: auto;
+}
+
+#signOut {
+    margin: 5px;
+}
+
+
+#downloads {
+    max-height: 200px;
+    overflow-y: auto;
+    color: black;
+}
+
+#topBar {
+    background-color: rgb(162, 23, 255);
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.video-item {
+    background-color: #121212;
+    color: white;
+}
+
+button.btn {
+    background-color: rgb(162, 23, 255);
+    color: white;
+}
+
+button.btn:hover:disabled {
+    color: white;
+}
+
+button.btn:hover:enabled {
+    background-color:rgb(127, 16, 201);
+    color: white;
+}
