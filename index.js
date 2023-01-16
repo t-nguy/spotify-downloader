@@ -24,7 +24,7 @@ const createWindow = () => {
 
     win.removeMenu();
 
-    if(process.platform === 'darwin' || process.platofrm === 'linux'){
+    if(process.platform === 'darwin' || process.platform === 'linux'){
         ffmpegPath = '/bin/unix/ffmpeg';
     }
     else if(process.platform === 'win32'){
@@ -153,7 +153,7 @@ async function refreshAccessToken(refresh_token){
             },
             body: querystring.stringify({
                 client_id,
-                grant_type: 'authorization_code',
+                grant_type: 'refresh_token',
                 refresh_token,
                 redirect_uri,
                 code_verifier: codeVerifier 
@@ -215,7 +215,7 @@ ipcMain.on('signOut', (event, data) => {
 
 function initializeYD(outputPath){
     YD = new ytmp3({
-        ffmpegPath: __dirname + '/bin/ffmpeg',
+        ffmpegPath: __dirname + ffmpegPath,
         outputPath,
         youtubeVideoQuality: 'highestaudio',
         queueParallelism: 2,
