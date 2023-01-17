@@ -6,4 +6,4 @@ Download for Window/MacOS on the [Releases](https://github.com/t-nguy/spotify-do
 
 ![App Screenshot](screenshot.PNG)
 
-Created for learning purposes and not intended for intensive use.
+Created for learning purposes and not intended for intensive use because of Youtube API quota limits. (~100 searches a day)
